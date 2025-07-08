@@ -1,0 +1,291 @@
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Puedes cambiar a una fuente cibernética si importas una */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #006eff; /* Verde fosforescente para títulos */
+    text-shadow: 0 0 5px #006eff, 0 0 10px ##006eff; /* Efecto brillante */
+}
+
+a {
+    color: #006eff; /* Verde fosforescente para enlaces */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: 006eff; /* Tono más claro al pasar el mouse */
+}
+
+.section {
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    background-color: #f8f8f8; /* Un ligero gris para las secciones */
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sutil sombra */
+}
+
+/* Cabecera (Hero) */
+.hero {
+    background: url('https://via.placeholder.com/1500x600/000000/00FF00?text=ClimaTech+Solutions+Banner') no-repeat center center/cover; /* Imagen de fondo grande */
+    height: 500px; /* Altura de la cabecera */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Superposición oscura para que el texto resalte */
+}
+
+.hero-content {
+    z-index: 1;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: #006eff; /* Tono más vibrante */
+    text-shadow: 0 0 10px #006eff, 0 0 20px #006eff;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    color: #e0e0e0;
+}
+
+/* Navegación */
+nav {
+    background-color: #1a1a1a; /* Fondo oscuro para la barra de navegación */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #006eff; /* Verde fosforescente */
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #006eff;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Productos */
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    margin-top: 40px;
+}
+
+.product-item {
+    background-color: #222222; /* Fondo oscuro para los recuadros de productos */
+    border: 2px solid #006eff; /* Borde verde fosforescente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0,255,0,0.5); /* Sombra brillante */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #e0e0e0; /* Color de texto claro */
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0,255,0,0.8);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #006eff;
+}
+
+.product-item h3 {
+    color: #00FF00;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.product-item p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.product-item .price {
+    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #006eff; /* Un tono más vivo para el precio */
+    text-shadow: 0 0 5px #006eff;
+}
+
+/* Producto Destacado (EcoFlow Minisplit Solar) */
+.featured-product {
+    background-color: #1a1a1a; /* Fondo más oscuro para el producto innovador */
+    color: #006eff;
+    border: 2px solid #006eff;
+    box-shadow: 0 0 30px rgba(57,255,20,0.7); /* Sombra más intensa */
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-product h2 {
+    color: #006eff;
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px #006eff, 0 0 25px #006eff;
+}
+
+.featured-product-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #006eff;
+    box-shadow: 0 0 20px rgba(57,255,20,0.5);
+    margin-bottom: 40px;
+}
+
+.featured-product-content {
+    max-width: 800px;
+    text-align: left;
+}
+
+.featured-product-content h3 {
+    font-size: 2.2em;
+    color: #006eff;
+    margin-bottom: 20px;
+}
+
+.featured-product-content h4 {
+    font-size: 1.8em;
+    color: #006eff;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.featured-product-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.featured-product-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.featured-product-content ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="%2300FF00"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat left center;
+    background-size: 16px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+.featured-product-content .price {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #006eff;
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: 0 0 10px #006eff, 0 0 20px #006eff;
+}
+
+/* Contacto */
+#contacto address {
+    margin-top: 30px;
+    font-style: normal;
+    font-size: 1.1em;
+    color: #555;
+}
+
+#contacto address p {
+    margin-bottom: 10px;
+}
+
+#contacto strong {
+    color: #006eff;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #1a1a1a;
+    color: #006eff; /* Verde fosforescente para el texto del footer */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    border-top: 2px solid #006eff; /* Borde superior verde */
+}
+
+/* Botones (Ejemplo, si añades formularios o más CTA) */
+.button {
+    background-color: #006eff; /* Verde fosforescente */
+    color: #000000; /* Texto oscuro para contraste */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.button:hover {
+    background-color: #39FF14; /* Tono más claro */
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0,255,0,0.6);
+}

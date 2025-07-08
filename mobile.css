@@ -1,0 +1,118 @@
+/* Estilos para pantallas pequeñas (hasta 768px de ancho) */
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 350px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        padding: 8px 0;
+    }
+
+    .section {
+        padding: 40px 15px;
+    }
+
+    .product-gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product-item {
+        width: 90%; /* Ocupa casi todo el ancho disponible */
+        max-width: 350px; /* Limita el ancho máximo para tabletas */
+    }
+
+    .featured-product {
+        padding: 50px 15px;
+    }
+
+    .featured-product h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .featured-product-image {
+        max-width: 95%;
+        margin-bottom: 30px;
+    }
+
+    .featured-product-content {
+        max-width: 95%;
+    }
+
+    .featured-product-content h3 {
+        font-size: 1.8em;
+    }
+
+    .featured-product-content h4 {
+        font-size: 1.5em;
+    }
+
+    .featured-product-content p,
+    .featured-product-content ul li {
+        font-size: 1em;
+    }
+
+    .featured-product-content .price {
+        font-size: 2em;
+        margin-top: 30px;
+    }
+
+    #contacto address {
+        font-size: 1em;
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (ej. smartphones en vertical) */
+@media screen and (max-width: 480px) {
+    .hero {
+        height: 250px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .section h2 {
+        font-size: 1.8em;
+    }
+
+    .featured-product h2 {
+        font-size: 1.6em;
+    }
+
+    .featured-product-content h3 {
+        font-size: 1.5em;
+    }
+
+    .featured-product-content h4 {
+        font-size: 1.2em;
+    }
+
+    .product-item {
+        width: 95%;
+    }
+}
