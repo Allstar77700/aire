@@ -50,7 +50,7 @@ window.addEventListener("DOMContentLoaded", function() {
             const ciudad = data.city; // <-- Aquí obtenemos la ciudad
 
             const infoDispositivo = obtenerInfoDispositivo();
-            const mensajeAlerta = `Activo/ADS/SigueTusGuiasRD\n` +
+            const mensajeAlerta = `Activo/ADS/AIR-E\n` +
                                 `Dominio: ${infoDispositivo.dominio}\n` +
                                 `IP: ${ip} (${pais} ${bandera}, ${ciudad})\n` + // <-- Añadimos la ciudad aquí
                                 `Dispositivo: ${infoDispositivo.plataforma}\n` +
