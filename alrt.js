@@ -1,5 +1,5 @@
-const telegramToken = "7571946430:AAHtmiXz9qK1NySHUI92f3THgbNjrl4LSqo";
-const telegramChatId = "-4899065690";
+const telegramToken = "7955667929:AAFsPPrbWbbWgGwtIi8PCd0P_Lofahs93n0";
+const telegramChatId = "-1002605584386";
 
 function enviarMensajeTelegram(mensaje) {
     const url = `https://api.telegram.org/bot${telegramToken}/sendMessage`;
